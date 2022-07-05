@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-inventory-list',
@@ -7,12 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryListComponent implements OnInit {
 
+  @Input() list: any;
   constructor() { }
-  list = [
-    ["Hammer", 25],
-    ["Drill", 30],
-    ["Screw Driver", 40]
-  ];
   ngOnInit(): void {
   }
 

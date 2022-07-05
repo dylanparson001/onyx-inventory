@@ -8,6 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class InventoryFormComponent implements OnInit {
 
   constructor() { }
+    list = [
+    ["Hammer", 25],
+    ["Drill", 30],
+    ["Screw Driver", 40]
+  ];
+
+  addItem(){
+    console.log("working")
+  }
 
   ngOnInit(): void {
   }

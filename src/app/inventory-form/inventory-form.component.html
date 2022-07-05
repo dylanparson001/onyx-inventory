@@ -1,9 +1,16 @@
+<app-inventory-list [list]="list"> </app-inventory-list>
+
 <div class="mb-3">
   <label for="title" class="form-label">Item Name</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Item">
+  <input type="text" class="form-control" id="title-field" placeholder="Item" />
 </div>
 <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">Item Quantity</label>
-  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Quantity">
+  <input
+    type="text"
+    class="form-control"
+    id="quantity-field"
+    placeholder="Quantity"
+  />
+  <button class="btn btn-primary" (click)="addItem()">Add</button>
 </div>
-
